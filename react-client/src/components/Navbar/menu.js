@@ -18,6 +18,8 @@ import ChatsScreen from '../Messages/chatList';
 import ViewOwnerProfileScreen from '../Profiles/viewOwnerProfile';
 import ViewDogProfileScreen from '../Profiles/viewDogProfile';
 import EditDogProfileScreen from '../Profiles/editDogProfile';
+import LogoutScreen from '../Logout/Logout'
+import SignupScreen from '../Signup/Signup'
 
 class MenuScreen extends React.Component {
     static navigationOptions = {
@@ -63,6 +65,12 @@ class MenuScreen extends React.Component {
               navigate('Chats')
             }
           />
+          <Button
+            title="Signup"
+            onPress={() =>
+              navigate('Signup')
+            }
+          />
         </View>
       );
     }
@@ -79,6 +87,7 @@ const NavigationApp = StackNavigator({
   ViewOwnerProfile: {screen: ViewOwnerProfileScreen},
   ViewDogProfile: {screen: ViewDogProfileScreen},
   EditDogProfile: {screen: EditDogProfileScreen},
+  Signup: { screen: SignupScreen }
 });
 
   export default NavigationApp;
