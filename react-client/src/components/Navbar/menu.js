@@ -19,7 +19,7 @@ import ViewOwnerProfileScreen from '../Profiles/viewOwnerProfile';
 import ViewDogProfileScreen from '../Profiles/viewDogProfile';
 import EditDogProfileScreen from '../Profiles/editDogProfile';
 import LogoutScreen from '../Logout/Logout'
-import SignupScreen from '../Signup/Signup'
+import SignupScreen from '../Signup/Signup.js'
 
 class MenuScreen extends React.Component {
     static navigationOptions = {
